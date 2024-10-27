@@ -3,7 +3,7 @@ local reflexTypes = require(script.Parent.reflexTypes)
 
 local function Selector<State, Result>(
 	scope: fusionTypes.Scope<
-		fusionTypes.Fusion & { Producer: reflexTypes.Producer<State> }
+		fusionTypes.Fusion & { Producer: reflexTypes.Producer<State, {}> }
 	>,
 	selector: (state: State) -> Result,
 	equalityFn: ((next: Result, prev: Result) -> boolean)?
