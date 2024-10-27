@@ -1,6 +1,6 @@
 # Fusion Reflex
 
-A port of [react-reflex](https://github.com/littensy/react-reflex) for Fusion 0.3
+A port of [react-reflex](https://github.com/littensy/react-reflex) for [Fusion 0.3](https://github.com/dphfox/Fusion)
 
 ## Installing
 
