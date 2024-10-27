@@ -16,17 +16,17 @@ pesde add synpixel/fusion_reflex
 local scope = Fusion:scoped(FusionReflex, { Producer = producer })
 
 local count = scope:Selector(function(state)
-    return state.count
+	return state.count
 end)
 
 scope:New "TextButton" {
-    Text = scope:Computed(function(use)
+	Text = scope:Computed(function(use)
 		return `Count: {use(count)}`
 	end),
 	AnchorPoint = Vector2.new(0.5, 0.5),
 	Size = UDim2.new(0, 100, 0, 50),
 	Position = UDim2.new(0.5, 0, 0.5, 0),
-    Parent = playerGui,
+	Parent = playerGui,
 
 	[Fusion.OnEvent "MouseButton1Click"] = function()
 		scope.Producer.increment()
