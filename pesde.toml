@@ -1,0 +1,15 @@
+name = "synpixel/fusion_reflex"
+version = "0.1.0"
+authors = ["synpixel"]
+repository = "https://github.com/synpixel/fusion-reflex"
+license = "MIT"
+
+[target]
+environment = "roblox"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/sourcemap_generator.luau"
+
+[indices]
+default = "https://github.com/daimond113/pesde-index"
